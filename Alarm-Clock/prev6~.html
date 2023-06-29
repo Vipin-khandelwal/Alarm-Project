@@ -1,0 +1,65 @@
+<html lang="en">
+<!-- Name : Vipin khandelwal
+Email id :  bigboos4601@gmail.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALARM CLOCK CODING NINJAS</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="title"> &#129399;NINJA ALARM PROJECT&#9200;</h1> <!-- or we can use any alarm pic instead of emojies,i am using emojies to make it simple -->
+            <div class="row">
+            <div class=" col-lg-6 col-12 alarm">
+                <!-- Display the REAL time -->
+
+                <h2 id="realtime">Getting the real time</h2>
+
+                <!-- Select time of the alarm to be set(for new alarm) -->
+                <div class="alarmtimebody">
+                    <label>
+                        <div>
+                            <select class="time" id="hr"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="min"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="sec"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="ampm"></select>
+                        </div>
+                    </label>
+                </div>
+
+            <!-- Add new alarm, it will also add it to the recent list of alarm -->
+            <button id="setButton">Set Alarm</button>
+
+            <!-- Clear button to stop the alarm sound after it starts ringing -->
+            <button id="setClear">Clear Alarm</button>
+           </div>
+            <div class=" col-lg-6 col-12 set-alarm">
+                <h3 class="allalarms">Recent Alarms</h3>
+                <hr>
+                <!-- Here will be the list of all recent alarm set by the user -->
+                <ul id="incomplete-alarms"></ul>
+            </div>
+    </div>
+    </div>
+    <footer>Made by - Vipin khandelwal</footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
